@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#license by MIT
+#licensed by MIT
 #https://github.com/no-passwd/lxc-toolkit
 os="none"
 vm="none"
@@ -27,6 +27,55 @@ if [ $# -lt 1 ]; then
 fi
 
 ty=$1
+
+if [ "$ty" == "h" ] ; then
+    echo "常见参数: "
+	echo "lxc-toolkit.sh free -> 查看宿主机free -m"
+	echo "lxc-toolkit.sh fdisk -> 查看宿主机fdisk"
+	echo "lxc-toolkit.sh swapon -> 查看宿主机swapon"
+	echo "lxc-toolkit.sh uptime -> 查看宿主机uptime"
+	echo "lxc-toolkit.sh load -> 查看宿主机load负载"
+	echo "lxc-toolkit.sh top -> 查看宿主机processes统计"
+	echo "lxc-toolkit.sh cpu -> 查看宿主机cpu核心"
+	echo "lxc-toolkit.sh all -> 同时运行上述所有的命令"
+    exit 1
+fi
+if [ "$ty" == "help" ] ; then
+    echo "常见参数: "
+	echo "lxc-toolkit.sh free -> 查看宿主机free -m"
+	echo "lxc-toolkit.sh fdisk -> 查看宿主机fdisk"
+	echo "lxc-toolkit.sh swapon -> 查看宿主机swapon"
+	echo "lxc-toolkit.sh uptime -> 查看宿主机uptime"
+	echo "lxc-toolkit.sh load -> 查看宿主机load负载"
+	echo "lxc-toolkit.sh top -> 查看宿主机processes统计"
+	echo "lxc-toolkit.sh cpu -> 查看宿主机cpu核心"
+	echo "lxc-toolkit.sh all -> 同时运行上述所有的命令"
+    exit 1
+fi
+if [ "$ty" == "-h" ] ; then
+    echo "常见参数: "
+	echo "lxc-toolkit.sh free -> 查看宿主机free -m"
+	echo "lxc-toolkit.sh fdisk -> 查看宿主机fdisk"
+	echo "lxc-toolkit.sh swapon -> 查看宿主机swapon"
+	echo "lxc-toolkit.sh uptime -> 查看宿主机uptime"
+	echo "lxc-toolkit.sh load -> 查看宿主机load负载"
+	echo "lxc-toolkit.sh top -> 查看宿主机processes统计"
+	echo "lxc-toolkit.sh cpu -> 查看宿主机cpu核心"
+	echo "lxc-toolkit.sh all -> 同时运行上述所有的命令"
+    exit 1
+fi
+if [ "$ty" == "--h" ] ; then
+    echo "常见参数: "
+	echo "lxc-toolkit.sh free -> 查看宿主机free -m"
+	echo "lxc-toolkit.sh fdisk -> 查看宿主机fdisk"
+	echo "lxc-toolkit.sh swapon -> 查看宿主机swapon"
+	echo "lxc-toolkit.sh uptime -> 查看宿主机uptime"
+	echo "lxc-toolkit.sh load -> 查看宿主机load负载"
+	echo "lxc-toolkit.sh top -> 查看宿主机processes统计"
+	echo "lxc-toolkit.sh cpu -> 查看宿主机cpu核心"
+	echo "lxc-toolkit.sh all -> 同时运行上述所有的命令"
+    exit 1
+fi
 
 if [ "$(id -u)" != 0 ] ;then
 echo -e "\033[31m未使用root权限运行，无法获取系统信息\033[0m"
