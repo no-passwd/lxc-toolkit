@@ -4,7 +4,7 @@ lxc系统检测工具,概念验证。用于获取lxc宿主信息。
 ## 使用方法
 ```bash
 wget https://github.com/no-passwd/lxc-toolkit/archive/refs/heads/main.zip
-unzip lxc-toolkit-main.zip
+unzip main.zip
 cd lxc-toolkit-main
 bash lxc-toolkit.sh
 ```
@@ -20,14 +20,14 @@ bash lxc-toolkit.sh
 ### 命令参数
 
 ```bash
-lxc-toolkit.sh free -> 查看宿主机free -m
-lxc-toolkit.sh fdisk -> 查看宿主机fdisk
-lxc-toolkit.sh swapon -> 查看宿主机swapon
-lxc-toolkit.sh uptime -> 查看宿主机uptime
-lxc-toolkit.sh load -> 查看宿主机load负载
-lxc-toolkit.sh top -> 查看宿主机processes统计
-lxc-toolkit.sh cpu -> 查看宿主机cpu核心
-lxc-toolkit.sh all -> 同时运行上述所有的命令
+bash lxc-toolkit.sh free -> 查看宿主机free -m
+bash lxc-toolkit.sh fdisk -> 查看宿主机fdisk
+bash lxc-toolkit.sh swapon -> 查看宿主机swapon
+bash lxc-toolkit.sh uptime -> 查看宿主机uptime
+bash lxc-toolkit.sh load -> 查看宿主机load负载
+bash lxc-toolkit.sh top -> 查看宿主机processes统计
+bash lxc-toolkit.sh cpu -> 查看宿主机cpu核心
+bash lxc-toolkit.sh all -> 同时运行上述所有的命令
 ```
 
 ### 原理
