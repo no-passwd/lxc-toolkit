@@ -6,7 +6,8 @@ lxc系统检测工具,概念验证。用于获取lxc宿主信息。
 wget https://github.com/no-passwd/lxc-toolkit/archive/refs/heads/main.zip
 unzip main.zip
 cd lxc-toolkit-main
-bash lxc-toolkit.sh
+#bash lxc-toolkit.sh -h
+bash lxc-toolkit.sh all
 ```
 
 或者 
@@ -14,7 +15,8 @@ bash lxc-toolkit.sh
 ```bash
 git clone https://github.com/no-passwd/lxc-toolkit.git
 cd lxc-toolkit
-bash lxc-toolkit.sh
+#bash lxc-toolkit.sh -h
+bash lxc-toolkit.sh all
 ```
 
 ### 命令参数
