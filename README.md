@@ -32,6 +32,15 @@ bash lxc-toolkit.sh cpu -> 查看宿主机cpu核心
 bash lxc-toolkit.sh all -> 同时运行上述所有的命令
 ```
 
+其他组件（其他调用实现，最低权限也可调用）
+
+```python
+wget https://raw.githubusercontent.com/no-passwd/lxc-toolkit/main/free
+chmod +x free
+./free -m
+#Like free -m
+```
+
 ### 原理
 直接使用系统调用，从内核获取信息。由于lxc与宿主机是同一个内核。可以获取到宿主机信息。
 
